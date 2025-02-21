@@ -1,0 +1,40 @@
+{
+  "name": "bi-aprimo-api",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/lambdas/bi-aprimo-api/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@docuvera/nx-lambda:webpack",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/lambdas/bi-aprimo-api",
+        "main": "apps/lambdas/bi-aprimo-api/src/main.ts",
+        "tsConfig": "apps/lambdas/bi-aprimo-api/tsconfig.json"
+
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/apps/lambdas/bi-aprimo-api",
+        "{workspaceRoot}/test-results/apps/lambdas/bi-aprimo-api"
+      ],
+      "options": {
+        "jestConfig": "apps/lambdas/bi-aprimo-api/jest.config.ts"
+      }
+    }
+  },
+  "tags": []
+}

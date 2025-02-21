@@ -1,0 +1,59 @@
+{
+  "extends": ["../../../.eslintrc.json"],
+  "ignorePatterns": ["!**/*", "webpack.config.js", "**/jest.config.ts"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "parserOptions": {
+        "project": ["apps/lambdas/publish-veeva-rendition/tsconfig.*?.json"]
+      },
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "warn",
+        "@typescript-eslint/no-non-null-assertion": "warn",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "@typescript-eslint/no-unsafe-member-access": "off",
+        "@typescript-eslint/no-unsafe-argument": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-return": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-inferrable-types": "off",
+        "@typescript-eslint/unbound-method": "off",
+        "@typescript-eslint/prefer-nullish-coalescing": "off",
+        "@typescript-eslint/restrict-plus-operands": "off",
+        "@typescript-eslint/restrict-template-expressions": "off",
+        "@typescript-eslint/no-unnecessary-type-assertion": "off",
+        "@typescript-eslint/no-misused-promises": "off",
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/await-thenable": "off",
+        "@typescript-eslint/require-await": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/no-namespace": "off",
+        "@typescript-eslint/prefer-as-const": "off",
+        "@typescript-eslint/require-array-sort-compare": "off",
+        "@typescript-eslint/no-this-alias": "off",
+        "@typescript-eslint/no-unnecessary-type-constraint": "off",
+        "@nx/enforce-module-boundaries": "off",
+        "import/namespace": "off",
+        "no-prototype-builtins": "off",
+        "prefer-const": "off",
+        "no-fallthrough": "off",
+        "no-useless-escape": "off",
+        "no-empty": "off",
+        "no-case-declarations": "off",
+        "no-useless-catch": "off",
+        "no-extra-boolean-cast": "off",
+        "no-inner-declarations": "off"
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    }
+  ]
+}

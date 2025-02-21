@@ -1,0 +1,1267 @@
+{
+    "_links": {
+        "self": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/fields"
+        }
+    },
+    "items": [
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/16fac9b053f44a8cbec0a8fe010e322f"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/16fac9b053f44a8cbec0a8fe010e322f",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "SingleLineText",
+            "fieldName": "bi_AssetName",
+            "label": "Asset Name",
+            "id": "16fac9b053f44a8cbec0a8fe010e322f",
+            "localizedValues": [
+                {
+                    "value": "Test Document-02",
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-17T21:14:24.697Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/f7b97220b2c14f6da9d7a8fe010e3473"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/f7b97220b2c14f6da9d7a8fe010e3473",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "ClassificationList",
+            "fieldName": "bi_AssetType",
+            "label": "Asset Type",
+            "id": "f7b97220b2c14f6da9d7a8fe010e3473",
+            "localizedValues": [
+                {
+                    "values": [
+                        "2ec6d4d4c30a423e89bdaa7700e71600"
+                    ],
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-17T20:54:02.61Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/7f2f04be8d5e48beb00ba8fe010e3349"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/7f2f04be8d5e48beb00ba8fe010e3349",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "TextList",
+            "fieldName": "bi_KeywordsManual",
+            "label": "Keywords - Manual",
+            "id": "7f2f04be8d5e48beb00ba8fe010e3349",
+            "localizedValues": [
+                {
+                    "values": [
+                        "Testing"
+                    ],
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T17:58:52.217Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/bf2654713ca043c6bfd8a8fe010e33a0"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/bf2654713ca043c6bfd8a8fe010e33a0",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "TextList",
+            "fieldName": "bi_KeywordsAuto",
+            "label": "Keywords - Automatic",
+            "id": "bf2654713ca043c6bfd8a8fe010e33a0",
+            "localizedValues": [
+                {
+                    "values": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/f0de2ce5a2aa4dc1b639a90d00918a28"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/f0de2ce5a2aa4dc1b639a90d00918a28",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "OptionList",
+            "fieldName": "bi_AssetLanguage",
+            "label": "Asset Language",
+            "id": "f0de2ce5a2aa4dc1b639a90d00918a28",
+            "localizedValues": [
+                {
+                    "values": [
+                        "fc3d80ebf54d45c39dc0a90d00918a43"
+                    ],
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-17T20:55:47.31Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/d0f1dad5e29d43f99411b19200fb9d80"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/d0f1dad5e29d43f99411b19200fb9d80",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "ClassificationList",
+            "fieldName": "bi_EndAudience",
+            "label": "End Audience",
+            "id": "d0f1dad5e29d43f99411b19200fb9d80",
+            "localizedValues": [
+                {
+                    "values": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/bedad75ba06749409994a8fe010e4404"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/bedad75ba06749409994a8fe010e4404",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "OptionList",
+            "fieldName": "bi_EndAudienceDeprecated",
+            "label": "End Audience (deprecated)",
+            "id": "bedad75ba06749409994a8fe010e4404",
+            "localizedValues": [
+                {
+                    "values": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/3f7778fcb1bb4866a12ca8fe010e3d1d"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/3f7778fcb1bb4866a12ca8fe010e3d1d",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "SingleLineText",
+            "fieldName": "bi_Campaign",
+            "label": "Campaign/Medical Theme",
+            "id": "3f7778fcb1bb4866a12ca8fe010e3d1d",
+            "localizedValues": [
+                {
+                    "value": "Testing",
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T17:58:52.217Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/8c1a9c13a71b4778bf8cadad00743a53"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/8c1a9c13a71b4778bf8cadad00743a53",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "TextList",
+            "fieldName": "bi_CampaignList",
+            "label": "Campaign/Medical Theme (list)",
+            "id": "8c1a9c13a71b4778bf8cadad00743a53",
+            "localizedValues": [
+                {
+                    "values": [
+                        "Testing"
+                    ],
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T17:58:52.217Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/dbac94aab0d746f98564a8fe010e561d"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/dbac94aab0d746f98564a8fe010e561d",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "ClassificationList",
+            "fieldName": "bi_RightsPermission",
+            "label": "Rights permission",
+            "id": "dbac94aab0d746f98564a8fe010e561d",
+            "localizedValues": [
+                {
+                    "values": [
+                        "b8939104095249ebb188a8fe010dc4a5"
+                    ],
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-17T20:55:43.21Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/497a751ae4094324bd6da8fe010e5724"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/497a751ae4094324bd6da8fe010e5724",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "UserList",
+            "fieldName": "bi_AssetOwner",
+            "label": "Asset Owner",
+            "id": "497a751ae4094324bd6da8fe010e5724",
+            "localizedValues": [
+                {
+                    "values": [
+                        "c346994cc0604596943ab20b0130dbdf"
+                    ],
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-17T20:55:47.31Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/708a7cd339714c2eb011a8fe010e5855"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/708a7cd339714c2eb011a8fe010e5855",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "ClassificationList",
+            "fieldName": "bi_CreativeAgency",
+            "label": "Creative Agency",
+            "id": "708a7cd339714c2eb011a8fe010e5855",
+            "localizedValues": [
+                {
+                    "values": [
+                        "6ed9457f358945f2a1c8aed801064334"
+                    ],
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T17:58:41.917Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/6064ff07253948de9744a8fe010e590f"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/6064ff07253948de9744a8fe010e590f",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "ClassificationList",
+            "fieldName": "bi_ProductionPartner",
+            "label": "Production Partner",
+            "id": "6064ff07253948de9744a8fe010e590f",
+            "localizedValues": [
+                {
+                    "values": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/f686b1867f5c49b495c2a8fe010e5a19"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/f686b1867f5c49b495c2a8fe010e5a19",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "ClassificationList",
+            "fieldName": "bi_AgenciesShared",
+            "label": "Creative Agencies shared",
+            "id": "f686b1867f5c49b495c2a8fe010e5a19",
+            "localizedValues": [
+                {
+                    "values": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/f08280b1f29a4448b02ea92000b9bc26"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/f08280b1f29a4448b02ea92000b9bc26",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "ClassificationList",
+            "fieldName": "bi_ProductionPartnersShared",
+            "label": "Production Partners shared",
+            "id": "f08280b1f29a4448b02ea92000b9bc26",
+            "localizedValues": [
+                {
+                    "values": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/42be93852aed437aac96a8fe010e5a7a"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/42be93852aed437aac96a8fe010e5a7a",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "UserList",
+            "fieldName": "bi_UploadedBy",
+            "label": "Uploaded by",
+            "id": "42be93852aed437aac96a8fe010e5a7a",
+            "localizedValues": [
+                {
+                    "values": [
+                        "c346994cc0604596943ab20b0130dbdf"
+                    ],
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-17T20:55:47.31Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/58b74e8cdcc44013b19ba8fe010e5ace"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/58b74e8cdcc44013b19ba8fe010e5ace",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "UserList",
+            "fieldName": "bi_ReleasedBy",
+            "label": "Released by",
+            "id": "58b74e8cdcc44013b19ba8fe010e5ace",
+            "localizedValues": [
+                {
+                    "values": [
+                        "c346994cc0604596943ab20b0130dbdf"
+                    ],
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:04:35.283Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/a37613c972bb4011b4b8a8fe010e5b43"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/a37613c972bb4011b4b8a8fe010e5b43",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "UserList",
+            "fieldName": "bi_ExpiredBy",
+            "label": "Expired by",
+            "id": "a37613c972bb4011b4b8a8fe010e5b43",
+            "localizedValues": [
+                {
+                    "values": null,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/00685e7ccf90403caa09a918008def6b"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/00685e7ccf90403caa09a918008def6b",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "UserList",
+            "fieldName": "bi_SubscribedUsersList",
+            "label": "Subscribed users list",
+            "id": "00685e7ccf90403caa09a918008def6b",
+            "localizedValues": [
+                {
+                    "values": [
+                        "c346994cc0604596943ab20b0130dbdf"
+                    ],
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:01:01.263Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/e0be273bcb384e488d5ba96100a9d094"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/e0be273bcb384e488d5ba96100a9d094",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "TextList",
+            "fieldName": "bi_SubscribedUsers",
+            "label": "Subscribed system",
+            "id": "e0be273bcb384e488d5ba96100a9d094",
+            "localizedValues": [
+                {
+                    "values": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/8516c0810dbe4cd3b0baa8fe010e3403"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/8516c0810dbe4cd3b0baa8fe010e3403",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "ClassificationList",
+            "fieldName": "bi_AssetUse",
+            "label": "Asset Use",
+            "id": "8516c0810dbe4cd3b0baa8fe010e3403",
+            "localizedValues": [
+                {
+                    "values": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/c420b3b584a2429b93a9a8fe010e34db"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/c420b3b584a2429b93a9a8fe010e34db",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "ClassificationList",
+            "fieldName": "bi_CountryApprovedForUse",
+            "label": "Country Approved For Use",
+            "id": "c420b3b584a2429b93a9a8fe010e34db",
+            "localizedValues": [
+                {
+                    "values": [
+                        "9de28b69093445198c6da8fe010cad7a"
+                    ],
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-17T20:54:08.777Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/fa3cbdbb3cec41f2a122a8fe010e5792"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/fa3cbdbb3cec41f2a122a8fe010e5792",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "ClassificationList",
+            "fieldName": "bi_CountryOfOriginSelector",
+            "label": "Country Of Origin Select",
+            "id": "fa3cbdbb3cec41f2a122a8fe010e5792",
+            "localizedValues": [
+                {
+                    "values": [
+                        "66fab095db804e3daf76a8fe010e2614"
+                    ],
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-17T20:53:46.1Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/446ff7e17a6845459764ae5200ca7f21"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/446ff7e17a6845459764ae5200ca7f21",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "ClassificationList",
+            "fieldName": "bi_CoCreatingCountry",
+            "label": "Co-creating country",
+            "id": "446ff7e17a6845459764ae5200ca7f21",
+            "localizedValues": [
+                {
+                    "values": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/36e5b54801874b0a838fa8fe010e57f8"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/36e5b54801874b0a838fa8fe010e57f8",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "SingleLineText",
+            "fieldName": "bi_CountryOfOrigin",
+            "label": "Country Of Origin",
+            "id": "36e5b54801874b0a838fa8fe010e57f8",
+            "localizedValues": [
+                {
+                    "value": "United States (US)",
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:04:35.283Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/7a2a868111f242298ce5a8fe010e5cf6"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/7a2a868111f242298ce5a8fe010e5cf6",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "Date",
+            "fieldName": "bi_ActualReleaseDate",
+            "label": "Actual Released date",
+            "id": "7a2a868111f242298ce5a8fe010e5cf6",
+            "localizedValues": [
+                {
+                    "value": "2024-12-18",
+                    "hasDay": true,
+                    "hasMonth": true,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:04:35.283Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/6f94517977eb4f8e9928a8fe010e658f"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/6f94517977eb4f8e9928a8fe010e658f",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "Date",
+            "fieldName": "bi_ManualExpirationDate",
+            "label": "Manual Expiration Date",
+            "id": "6f94517977eb4f8e9928a8fe010e658f",
+            "localizedValues": [
+                {
+                    "value": null,
+                    "hasDay": null,
+                    "hasMonth": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/fc8041dcf0e24afeb86ea8fe010e5df8"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/fc8041dcf0e24afeb86ea8fe010e5df8",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "MultiLineText",
+            "fieldName": "bi_ReasonExpired",
+            "label": "Reason expired",
+            "id": "fc8041dcf0e24afeb86ea8fe010e5df8",
+            "localizedValues": [
+                {
+                    "value": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/41b6df3f86704ecc9462a8fe010e5d55"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/41b6df3f86704ecc9462a8fe010e5d55",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "Date",
+            "fieldName": "bi_ExpirationDate",
+            "label": "Expiration Date",
+            "id": "41b6df3f86704ecc9462a8fe010e5d55",
+            "localizedValues": [
+                {
+                    "value": "2026-12-19",
+                    "hasDay": true,
+                    "hasMonth": true,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:04:35.283Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/f58307643cfd4f26bc2fa8fe010e644f"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/f58307643cfd4f26bc2fa8fe010e644f",
+                    "select-key": "definition"
+                }
+            },
+            "recordLinkConditions": null,
+            "dataType": "RecordLink",
+            "fieldName": "bi_SourceOutputRelations",
+            "label": "Linked source / output",
+            "id": "f58307643cfd4f26bc2fa8fe010e644f",
+            "localizedValues": [
+                {
+                    "links": null,
+                    "parents": null,
+                    "children": null,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/4e270cd3e19d4829b708b16c00f88ea7"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/4e270cd3e19d4829b708b16c00f88ea7",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "Numeric",
+            "fieldName": "bi_ActivityIdNotEmpty",
+            "label": "Activity Id is not empty",
+            "id": "4e270cd3e19d4829b708b16c00f88ea7",
+            "localizedValues": [
+                {
+                    "value": "0",
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-17T20:55:47.31Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/04ef16287ef343f78d2fa8fe010e3dd8"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/04ef16287ef343f78d2fa8fe010e3dd8",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "SingleLineText",
+            "fieldName": "bi_State_readOnly",
+            "label": "State",
+            "id": "04ef16287ef343f78d2fa8fe010e3dd8",
+            "localizedValues": [
+                {
+                    "value": "Shared",
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:04:35.283Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/d4a999ed61fa457da718acbc011b1a83"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/d4a999ed61fa457da718acbc011b1a83",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "ClassificationList",
+            "fieldName": "bi_State",
+            "label": "State (Hidden)",
+            "id": "d4a999ed61fa457da718acbc011b1a83",
+            "localizedValues": [
+                {
+                    "values": [
+                        "e8c18559d8d447549076a8fe010dcae4"
+                    ],
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:04:32.19Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/ec243aa25b2c457dbca6a9a500dafd34"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/ec243aa25b2c457dbca6a9a500dafd34",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "MultiLineText",
+            "fieldName": "bi_DescriptionGlobal",
+            "label": "Global Description",
+            "id": "ec243aa25b2c457dbca6a9a500dafd34",
+            "localizedValues": [
+                {
+                    "value": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/07988fa54713443caf32ac8400f415c3"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/07988fa54713443caf32ac8400f415c3",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "MultiLineText",
+            "fieldName": "bi_DescriptionLocal",
+            "label": "Local Description",
+            "id": "07988fa54713443caf32ac8400f415c3",
+            "localizedValues": [
+                {
+                    "value": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/8c19e6ad4b514a8a9676aa6a009a9620"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/8c19e6ad4b514a8a9676aa6a009a9620",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "DateTime",
+            "fieldName": "bi_DateCreated",
+            "label": "Date Created",
+            "id": "8c19e6ad4b514a8a9676aa6a009a9620",
+            "localizedValues": [
+                {
+                    "value": "2024-12-17T20:53:34.7030000",
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-17T20:55:47.31Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/a3f39676251f4094927fa8fe010e3d7e"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/a3f39676251f4094927fa8fe010e3d7e",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "ClassificationList",
+            "fieldName": "bi_RecordTemplate",
+            "label": "Record Template",
+            "id": "a3f39676251f4094927fa8fe010e3d7e",
+            "localizedValues": [
+                {
+                    "values": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/7aa3539d4e9d4ceb8e44aba400ca4fa2"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/7aa3539d4e9d4ceb8e44aba400ca4fa2",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "MultiLineText",
+            "fieldName": "bi_LibrarianNote",
+            "label": "Librarian Note",
+            "id": "7aa3539d4e9d4ceb8e44aba400ca4fa2",
+            "localizedValues": [
+                {
+                    "value": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/1816089df7814541bcd1ac950007d718"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/1816089df7814541bcd1ac950007d718",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "ClassificationList",
+            "fieldName": "bi_assetCategory",
+            "label": "Asset Category",
+            "id": "1816089df7814541bcd1ac950007d718",
+            "localizedValues": [
+                {
+                    "values": [
+                        "1bf9a0a7b7cf424fb9e8ad9400cf567e"
+                    ],
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-17T20:53:45.607Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/c14734f02a7d405e96feb12a00b27534"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/c14734f02a7d405e96feb12a00b27534",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "Numeric",
+            "fieldName": "bi_IsVaultSynced",
+            "label": "VaultId is Synced",
+            "id": "c14734f02a7d405e96feb12a00b27534",
+            "localizedValues": [
+                {
+                    "value": "0",
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-17T20:55:47.31Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/803b4d2376d74c429d1aacc600eb61a4"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/803b4d2376d74c429d1aacc600eb61a4",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "ClassificationList",
+            "fieldName": "bi_IntendedChannel",
+            "label": "Intended Channel",
+            "id": "803b4d2376d74c429d1aacc600eb61a4",
+            "localizedValues": [
+                {
+                    "values": [
+                        "15ebbeeb09ab4076b2c7acc600e77c94"
+                    ],
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-17T20:55:45.113Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/183c11ef30c64e2fabd1acdf00db25c8"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/183c11ef30c64e2fabd1acdf00db25c8",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "OptionList",
+            "fieldName": "bi_ReasonForSourceFiles",
+            "label": "Reason if no source files",
+            "id": "183c11ef30c64e2fabd1acdf00db25c8",
+            "localizedValues": [
+                {
+                    "values": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:05:43.123Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/38244df88d674d979540ae2801578530"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/38244df88d674d979540ae2801578530",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "SingleLineText",
+            "fieldName": "bi_AssetType_readOnly",
+            "label": "Asset Type",
+            "id": "38244df88d674d979540ae2801578530",
+            "localizedValues": [
+                {
+                    "value": "Text block (simple asset)",
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-17T20:55:47.31Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/34603f33a47a4ef59f0fae28015785a3"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/34603f33a47a4ef59f0fae28015785a3",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "SingleLineText",
+            "fieldName": "bi_CountryApprovedForUse_readOnly",
+            "label": "Country Approved For Use",
+            "id": "34603f33a47a4ef59f0fae28015785a3",
+            "localizedValues": [
+                {
+                    "value": "United States (US)",
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-17T20:55:47.31Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/623d6c0a95064746802dae40015bed6f"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/623d6c0a95064746802dae40015bed6f",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "ClassificationList",
+            "fieldName": "bi_ResponsibleFunctionalUnit",
+            "label": "Responsible Functional Unit",
+            "id": "623d6c0a95064746802dae40015bed6f",
+            "localizedValues": [
+                {
+                    "values": [
+                        "55ce03138240499cb633b21200430726",
+                        "de78339659a74c2bb658ae4001629c7d"
+                    ],
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T17:58:02.48Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/e8e45060086a4493a62bb0a00147276f"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/e8e45060086a4493a62bb0a00147276f",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "Html",
+            "fieldName": "bi_AssetState",
+            "label": "Asset State",
+            "id": "e8e45060086a4493a62bb0a00147276f",
+            "localizedValues": [
+                {
+                    "value": "<div style=\"font-size: 16px; background-color: #339966; text-align: center;\"><span style=\"color: #ffffff;\"> SHARED </span></div>",
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-18T18:04:35.283Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/field/be3f169c31644897ab44361e02913b40"
+                },
+                "definition": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/fielddefinition/be3f169c31644897ab44361e02913b40",
+                    "select-key": "definition"
+                }
+            },
+            "dataType": "Html",
+            "fieldName": "ContentCoach_AI_Summary",
+            "label": "Summary",
+            "id": "be3f169c31644897ab44361e02913b40",
+            "localizedValues": [
+                {
+                    "value": null,
+                    "aiInfluenced": false,
+                    "languageId": "00000000000000000000000000000000",
+                    "readOnly": null,
+                    "modifiedOn": "2024-12-17T20:55:47.31Z"
+                }
+            ],
+            "inheritanceState": null,
+            "inheritable": null
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "_links": {
+        "ownedby": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/user/c346994cc0604596943ab20b0130dbdf",
+            "select-key": "ownedby"
+        },
+        "permissions": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/collection/85524be899fc4d7daaabb2490152d5ab/permissions",
+            "select-key": "permissions"
+        },
+        "records": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/collection/85524be899fc4d7daaabb2490152d5ab/records",
+            "select-key": "records"
+        },
+        "comments": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/collection/85524be899fc4d7daaabb2490152d5ab/comments",
+            "select-key": "comments"
+        },
+        "modifiedby": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/user/c346994cc0604596943ab20b0130dbdf",
+            "select-key": "modifiedby"
+        },
+        "createdby": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/user/c346994cc0604596943ab20b0130dbdf",
+            "select-key": "createdby"
+        },
+        "self": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/collection/85524be899fc4d7daaabb2490152d5ab"
+        }
+    },
+    "id": "85524be899fc4d7daaabb2490152d5ab",
+    "name": "Docuvera Test Collection",
+    "description": "",
+    "type": "Static",
+    "searchExpression": null,
+    "searchCriteria": null,
+    "ownerId": "c346994cc0604596943ab20b0130dbdf",
+    "tag": null,
+    "isReadOnly": null,
+    "modifiedOn": "2024-12-18T18:03:33.963Z",
+    "createdOn": "2024-12-17T20:33:39.55Z"
+}

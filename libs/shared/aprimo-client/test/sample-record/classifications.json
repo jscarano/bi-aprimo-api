@@ -1,0 +1,219 @@
+{
+    "_links": {
+        "self": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classifications"
+        }
+    },
+    "items": [
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classification/985ba9b932ea4c74b725a8fe010e13f8"
+                },
+                "target": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/classification/985ba9b932ea4c74b725a8fe010e13f8",
+                    "select-key": "target"
+                }
+            },
+            "sortIndex": 2147483647,
+            "isManual": true,
+            "id": "985ba9b932ea4c74b725a8fe010e13f8"
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classification/b62a5b1208554c629860a9ea007ed9aa"
+                },
+                "target": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/classification/b62a5b1208554c629860a9ea007ed9aa",
+                    "select-key": "target"
+                }
+            },
+            "sortIndex": 2147483647,
+            "isManual": true,
+            "id": "b62a5b1208554c629860a9ea007ed9aa"
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classification/55ce03138240499cb633b21200430726"
+                },
+                "target": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/classification/55ce03138240499cb633b21200430726",
+                    "select-key": "target"
+                }
+            },
+            "sortIndex": 2147483647,
+            "isManual": true,
+            "id": "55ce03138240499cb633b21200430726"
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classification/64baaf6d05464f6a8090a8fe010d0228"
+                },
+                "target": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/classification/64baaf6d05464f6a8090a8fe010d0228",
+                    "select-key": "target"
+                }
+            },
+            "sortIndex": 2147483647,
+            "isManual": true,
+            "id": "64baaf6d05464f6a8090a8fe010d0228"
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classification/e8c18559d8d447549076a8fe010dcae4"
+                },
+                "target": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/classification/e8c18559d8d447549076a8fe010dcae4",
+                    "select-key": "target"
+                }
+            },
+            "sortIndex": 2147483647,
+            "isManual": true,
+            "id": "e8c18559d8d447549076a8fe010dcae4"
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classification/1bf9a0a7b7cf424fb9e8ad9400cf567e"
+                },
+                "target": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/classification/1bf9a0a7b7cf424fb9e8ad9400cf567e",
+                    "select-key": "target"
+                }
+            },
+            "sortIndex": 2147483647,
+            "isManual": true,
+            "id": "1bf9a0a7b7cf424fb9e8ad9400cf567e"
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classification/66fab095db804e3daf76a8fe010e2614"
+                },
+                "target": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/classification/66fab095db804e3daf76a8fe010e2614",
+                    "select-key": "target"
+                }
+            },
+            "sortIndex": 2147483647,
+            "isManual": true,
+            "id": "66fab095db804e3daf76a8fe010e2614"
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classification/2ec6d4d4c30a423e89bdaa7700e71600"
+                },
+                "target": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/classification/2ec6d4d4c30a423e89bdaa7700e71600",
+                    "select-key": "target"
+                }
+            },
+            "sortIndex": 2147483647,
+            "isManual": true,
+            "id": "2ec6d4d4c30a423e89bdaa7700e71600"
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classification/32c3a756d76344f882dea8fe010dbdfe"
+                },
+                "target": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/classification/32c3a756d76344f882dea8fe010dbdfe",
+                    "select-key": "target"
+                }
+            },
+            "sortIndex": 2147483647,
+            "isManual": false,
+            "id": "32c3a756d76344f882dea8fe010dbdfe"
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classification/9de28b69093445198c6da8fe010cad7a"
+                },
+                "target": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/classification/9de28b69093445198c6da8fe010cad7a",
+                    "select-key": "target"
+                }
+            },
+            "sortIndex": 2147483647,
+            "isManual": true,
+            "id": "9de28b69093445198c6da8fe010cad7a"
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classification/de78339659a74c2bb658ae4001629c7d"
+                },
+                "target": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/classification/de78339659a74c2bb658ae4001629c7d",
+                    "select-key": "target"
+                }
+            },
+            "sortIndex": 2147483647,
+            "isManual": true,
+            "id": "de78339659a74c2bb658ae4001629c7d"
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classification/b8939104095249ebb188a8fe010dc4a5"
+                },
+                "target": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/classification/b8939104095249ebb188a8fe010dc4a5",
+                    "select-key": "target"
+                }
+            },
+            "sortIndex": 2147483647,
+            "isManual": true,
+            "id": "b8939104095249ebb188a8fe010dc4a5"
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classification/15ebbeeb09ab4076b2c7acc600e77c94"
+                },
+                "target": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/classification/15ebbeeb09ab4076b2c7acc600e77c94",
+                    "select-key": "target"
+                }
+            },
+            "sortIndex": 2147483647,
+            "isManual": true,
+            "id": "15ebbeeb09ab4076b2c7acc600e77c94"
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classification/2db001b96ace4348b796a8fe010dcd88"
+                },
+                "target": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/classification/2db001b96ace4348b796a8fe010dcd88",
+                    "select-key": "target"
+                }
+            },
+            "sortIndex": 2147483647,
+            "isManual": true,
+            "id": "2db001b96ace4348b796a8fe010dcd88"
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classification/6ed9457f358945f2a1c8aed801064334"
+                },
+                "target": {
+                    "href": "https://boehringer-sb2.dam.aprimo.com/api/core/classification/6ed9457f358945f2a1c8aed801064334",
+                    "select-key": "target"
+                }
+            },
+            "sortIndex": 2147483647,
+            "isManual": true,
+            "id": "6ed9457f358945f2a1c8aed801064334"
+        }
+    ]
+}

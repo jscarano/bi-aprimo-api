@@ -1,0 +1,19 @@
+{
+  "name": "aprimo-client",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/aprimo-client/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "libs/shared/aprimo-client/jest.config.ts"
+      }
+    }
+  },
+  "tags": []
+}

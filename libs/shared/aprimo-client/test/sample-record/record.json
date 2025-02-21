@@ -1,0 +1,69 @@
+{
+    "_links": {
+        "fields": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/fields",
+            "select-key": "fields"
+        },
+        "files": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/files",
+            "select-key": "files"
+        },
+        "preview": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/image/preview",
+            "select-key": "preview"
+        },
+        "thumbnail": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/image/thumbnail",
+            "select-key": "thumbnail"
+        },
+        "masterfile": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/masterfile",
+            "select-key": "masterfile"
+        },
+        "masterfilelatestversion": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/masterfilelatestversion",
+            "select-key": "masterfilelatestversion"
+        },
+        "classifications": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/classifications",
+            "select-key": "classifications"
+        },
+        "accesslists": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/accesslists",
+            "select-key": "accesslists"
+        },
+        "permissions": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/permissions",
+            "select-key": "permissions"
+        },
+        "locks": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/locks",
+            "select-key": "locks"
+        },
+        "analytics": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c/analytics",
+            "select-key": "analyticsdata"
+        },
+        "modifiedby": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/user/c346994cc0604596943ab20b0130dbdf",
+            "select-key": "modifiedby"
+        },
+        "createdby": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/user/c346994cc0604596943ab20b0130dbdf",
+            "select-key": "createdby"
+        },
+        "self": {
+            "href": "https://boehringer-sb2.dam.aprimo.com/api/core/record/b358ae9ce1004cc6a3d6b24901584e3c"
+        }
+    },
+    "id": "b358ae9ce1004cc6a3d6b24901584e3c",
+    "status": "Released",
+    "contentType": "Document",
+    "title": null,
+    "tag": null,
+    "textContent": null,
+    "aiInfluenced": "No",
+    "hasImageOverlay": false,
+    "modifiedOn": "2024-12-18T18:04:35.283Z",
+    "createdOn": "2024-12-17T20:53:34.703Z"
+}

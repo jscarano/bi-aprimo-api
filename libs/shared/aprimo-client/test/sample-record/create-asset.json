@@ -1,0 +1,45 @@
+{
+	"tag": "<xml>test tag</xml>",
+	"contentType": "Document",
+
+	"files": {
+		"master": "eyJQYXRoIjoiYm9laHJpbmdlci1zYjIvODMyM2JlMGMxZDIwNGZmM2FhZjgzNDgxNmUwODcxODYvVGVzdC1Eb2N1bWVudC0wNC5kb2N4IiwiVm9sdW1lSWQiOiI0ZGMxZjU1NS1kYzAzLWViMTItMWUwMi0xNmIwYTA0YTY3ZDcifQ==",
+		"addOrUpdate": [
+			{
+				"versions": {
+					"addOrUpdate": [
+						{
+							"id": "eyJQYXRoIjoiYm9laHJpbmdlci1zYjIvODMyM2JlMGMxZDIwNGZmM2FhZjgzNDgxNmUwODcxODYvVGVzdC1Eb2N1bWVudC0wNC5kb2N4IiwiVm9sdW1lSWQiOiI0ZGMxZjU1NS1kYzAzLWViMTItMWUwMi0xNmIwYTA0YTY3ZDcifQ==",
+							"filename": "Test Document-05.docx",
+							"tag": "<xml>another test tag</xml>",
+							"versionLabel": "this is a dummy label",
+							"comment": "this is a comment"
+						}
+					]
+				}
+			}
+		]
+	},
+	"fields": {
+		"addOrUpdate": [
+			{
+				"id": "1816089df7814541bcd1ac950007d718",
+				"localizedValues": [
+					{
+						"languageId": "00000000000000000000000000000000",
+						"values": ["1bf9a0a7b7cf424fb9e8ad9400cf567e"]
+					}
+				]
+			},
+            {
+				"id": "16fac9b053f44a8cbec0a8fe010e322f",
+				"localizedValues": [
+					{
+						"languageId": "00000000000000000000000000000000",
+						"values": ["Test Document-05"]
+					}
+				]
+			}
+		]
+	}
+}

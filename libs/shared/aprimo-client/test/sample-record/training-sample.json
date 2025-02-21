@@ -1,0 +1,107 @@
+{
+	"tag": "<xml>test tag</xml>",
+	"contentType": "Record",
+	"classifications": {
+		"addOrUpdate": [
+			{
+				"id": "F0962A92-8725-4FFC-9301-926FFCB6527A",
+				"sortIndex": 2
+			},
+			{
+				"id": "AB57432B-C899-40CF-BD44-802D5201973C",
+				"sortIndex": 1
+			}
+		]
+	},
+	"files": {
+		"master": "NzZBN0Y0NDctRjQyMy00NTJDLThDNEMtMUY4MkQ0MjA4OUU0",
+		"addOrUpdate": [
+			{
+				"versions": {
+					"addOrUpdate": [
+						{
+							"id": "NzZBN0Y0NDctRjQyMy00NTJDLThDNEMtMUY4MkQ0MjA4OUU0",
+							"filename": "file1.png",
+							"tag": "<xml>another test tag</xml>",
+							"versionLabel": "this is a dummy label",
+							"comment": "this is a comment"
+						}
+					]
+				}
+			},
+			{
+				"versions": {
+					"addOrUpdate": [
+						{
+							"id": "NDBFNEY4REMtN0FDQS00NjE2LUJFOTgtQTkxNTk5MTJENTFG",
+							"filename": "file3.png",
+							"tag": "<xml>yet another test tag</xml>",
+							"versionLabel": "yet another dummy label",
+							"comment": "yet another comment",
+							"additionalFiles": {
+								"addOrUpdate": [
+									{
+										"id": "MkYzQjc0MTctQ0E3Ri00QUFELUEwQkQtNEIzRkQ2NzczOEY0",
+										"label": "new additional file label",
+										"tag": "<xml>and here yet another tag</xml>",
+										"filename": "additional file name.jpg"
+									}
+								]
+							},
+							"previews": {
+								"addOrUpdate": [
+									{
+										"id": "MzRBMTA1MTYtQ0UyOC00RDRGLTlGOUEtNzQxMjg2NjgzMDNG",
+										"label": "new file preview",
+										"pageNumber": 2,
+										"tag": "<xml>oh yes, one more tag</xml>"
+									}
+								]
+							},
+							"publicationItems": [
+								{
+									"pageNumber": 1,
+									"targetFileVersionId": "C8A0DBE0-4513-4A85-B31C-E2F3D68E5CE1"
+								},
+								{
+									"pageNumber": 2,
+									"targetFileVersionId": "D166A072-2D0D-42CE-810B-3E76F64BFFBD"
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"id": "DA75E95E-E306-4F1D-BAEB-A5980109C930",
+				"watermarktype": "UseSpecified",
+				"watermarkId": "CF4F6966-398D-4B26-B08B-2F5FE4809FD4"
+			},
+			{
+				"id": "DA75E95E-E306-4F1D-BAEB-A5980109C930",
+				"versions": {
+					"addOrUpdate": [
+						{
+							"id": "D55D1DE0-7E8E-4AF7-BF78-A598010AC47D",
+							"watermarktype": "None",
+							"watermarkId": "00000000-0000-0000-0000-000000000000"
+						}
+					]
+				}
+			}
+		]
+	},
+	"fields": {
+		"addOrUpdate": [
+			{
+				"id": "6980bb9511454c4896afa48f009ac883",
+				"localizedValues": [
+					{
+						"languageId": "00000000000000000000000000000000",
+						"values": ["3240c776b7454ac19291a3cd006ea6c3", "209d7ede48004a008885a3cd006b8b8c"]
+					}
+				]
+			}
+		]
+	}
+}

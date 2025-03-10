@@ -2,16 +2,21 @@
   export interface FieldDefinition {
     name: string;
     id: string;
+    rootId: string;
     label: string;
     dataType: string;
     acceptMultipleOptions?: boolean;
-    items?: Item[];
+    items?: FieldDefinitionItem[];
     maximumLength?: number;
     minimumLength?: number;
   }
 
-  export interface Item {
+  export interface FieldDefinitionItem {
     id: string;
     name: string;
     label: string;
+    labels: {
+      value: string;
+      languageId: string;
+    }[];
   }

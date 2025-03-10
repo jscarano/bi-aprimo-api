@@ -1,9 +1,9 @@
-export interface DamRecord {
-    tag:             string;
-    contentType:     string;
-    classifications: Classifications;
-    files:           Files;
-    fields:          Fields;
+export interface AprimoRecord {
+    tag?:             string;
+    contentType:      string;
+    classifications?: Classifications;
+    files?:           AprimoRecordFile;
+    fields?:          Fields;
 }
 
 export interface Classifications {
@@ -26,19 +26,18 @@ export interface FieldsAddOrUpdate {
 
 export interface LocalizedValue {
     languageId: string;
-    values:     string[];
+    values?:    string[];
+    value?:     string;
 }
 
-export interface Files {
+export interface AprimoRecordFile {
     master:      string;
-    addOrUpdate: FilesAddOrUpdate[];
+    addOrUpdate: FileAddOrUpdate[];
 }
 
-export interface FilesAddOrUpdate {
-    versions?:      Versions;
-    id?:            string;
-    watermarktype?: string;
-    watermarkId?:   string;
+export interface FileAddOrUpdate {
+    versions?:        Versions;
+    id?:              string;
 }
 
 export interface Versions {

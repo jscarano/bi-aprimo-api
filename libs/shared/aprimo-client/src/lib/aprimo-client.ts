@@ -9,9 +9,16 @@ import { AprimoConfig } from '../types/aprimo-config';
 import { FieldDefinition } from '../types/field-definition';
 import { SearchResult } from '../types/search-result';
 import { SearchExpression } from '../types/search-expression';
-import { DamRecord } from '../types/dam-record';
+import { DamRecord, VersionsAddOrUpdate } from '../types/dam-record';
 import { PrepareUploadResponse } from '../types/prepare-upload-response';
 import { UploadResponse } from '../types/upload-response';
+import { ClassificationItem } from 'src/types/classification';
+import { ImagePreview } from 'src/types/image-preview';
+import { ImageDownload } from 'src/types/image-download';
+import { LanguageItem } from 'src/types/language-item';
+import { AprimoRecord } from 'src/types/aprimo-record';
+import { PropertyMapping } from 'src/types/property-mapping';
+import { AprimoFile } from 'src/types/aprimo-file';
 
 type RecordSelectKey =
   | 'fields'
@@ -30,10 +37,209 @@ type RecordSelectKey =
 export class AprimoClient {
   private _AprimoConfig: AprimoConfig;
   private _AuthToken: string | null = null;
+  private _languageId: string = '00000000000000000000000000000000';
 
   constructor(config: AprimoConfig) {
     this._AprimoConfig = config;
   }
+
+
+  public createEmptyRecord(contentType: string, languageId?: string): AprimoRecord {
+    const record: AprimoRecord = {
+        contentType: contentType,
+    };
+
+    if (languageId !== undefined) this._languageId = languageId;
+
+    return record;
+}
+
+public addFilesToRecord(record: AprimoRecord, masterFile: AprimoFile, additionalFiles: AprimoFile[]): AprimoRecord {
+    if (record === undefined) return record;
+
+    if (masterFile === undefined) return record;
+
+    if (record.files === undefined) {
+        record.files = {
+            master: masterFile.id,
+            addOrUpdate: [],
+        };
+    }
+
+    const fileVersion: VersionsAddOrUpdate =
+        {
+            id: masterFile.id,
+            filename: masterFile.filename,
+        };
+
+    if (additionalFiles !== undefined) {
+        fileVersion.additionalFiles = {
+            addOrUpdate: [],
+        };
+        for (const af of additionalFiles) {
+            fileVersion.additionalFiles.addOrUpdate.push({
+                id: af.id,
+                filename: af.filename,
+            });
+        }
+    }
+
+    record.files.addOrUpdate.push(
+        {
+            versions: {
+                addOrUpdate: [fileVersion],
+            },
+        }
+    )
+
+    return record;
+}
+
+public addFieldToRecord(record: AprimoRecord, fieldDefinitions: FieldDefinition[], propertyMapping: PropertyMapping, propertyValue: string[]): AprimoRecord {
+    const values: string[] = [];
+
+    if (record === undefined || fieldDefinitions === undefined || propertyMapping?.targetId === undefined) return record;
+
+    const fieldDefinition = fieldDefinitions.find((fd) => {
+        return fd.name === propertyMapping.targetName;
+    });
+    if (fieldDefinition === undefined) return record;
+
+    if (record.fields === undefined) {
+        record.fields = {
+            addOrUpdate: [],
+        };
+    }
+
+    const localizedValue: any = {
+        languageId: '00000000000000000000000000000000',
+    };
+
+    switch (fieldDefinition.dataType) {
+        case 'ClassificationList':
+        case 'OptionList':
+            if (fieldDefinition?.items === undefined) return record
+
+            for (const value of propertyValue) {
+                const fieldValue = fieldDefinition.items.find((item) => {
+                    return item.name === value;
+                });
+
+                if (fieldValue === undefined) continue;
+
+                values.push(fieldValue.id);
+
+                if (fieldDefinition.acceptMultipleOptions) break;
+            }
+            localizedValue.values = values;
+            break;
+        case 'Html':
+        case 'SingleLineText':
+        case 'MultiLineText':
+        case 'Numeric':
+            localizedValue.value = propertyValue[0];
+            break;
+        case 'Date':
+        case 'Duration':
+        case 'HyperlinkList':
+        case 'Json':
+        case 'Numeric':
+        case 'RecordLink':
+        case 'TextList':
+        case 'UserList':
+            return record;
+    }
+
+    record.fields.addOrUpdate.push({
+        id: propertyMapping.targetId ?? '',
+        localizedValues: [localizedValue],
+    });
+
+    return record;
+}
+
+public async getRecord(id: string): Promise<AprimoRecord> {
+    if (this._AuthToken === null) {
+        await this.getAuthToken();
+    }
+
+    return new Promise<AprimoRecord>((resolve, reject) => {
+      this.getRequest<any>(`https://${this._AprimoConfig.apiPrefix}.dam.aprimo.com/api/core/record/${id}`)
+            .then((response) => {
+                resolve(response.body);
+            }).catch((err: unknown) => {
+                reject(err);
+            });
+    });
+}
+
+public async getLanguages(): Promise<LanguageItem[]> {
+    if (this._AuthToken === null) {
+        await this.getAuthToken();
+    }
+    const languages: LanguageItem[] = [];
+
+    return new Promise<LanguageItem[]>((resolve, reject) => {
+        this.getRequest<any>(`https://${this._AprimoConfig.apiPrefix}.dam.aprimo.com/api/core/languages`)
+            .then((response) => {
+                for (const item of response.body.items) {
+                    if (item.isEnabledForFields) {
+                        languages.push({
+                            id: item.id,
+                            name: item.name,
+                            culture: item.culture,
+                        })
+                    }
+                }
+                resolve(languages);
+            }).catch((err: unknown) => {
+                reject(err);
+            });
+    });
+}
+
+public async downloadImageAsset(id: string, filename: string): Promise<ImageDownload> {
+    const response = await this.getImagePreview(id);
+
+    const imageResponse = await this.getRequest<any>(response.uri);
+    const contentType = imageResponse.headers['content-type'];
+    return {
+        id,
+        filename,
+        contentType,
+        buffer: imageResponse.body,
+    };
+}
+
+public async getImagePreview(id: string): Promise<ImagePreview> {
+    if (this._AuthToken === null) {
+        await this.getAuthToken();
+    }
+
+    return new Promise<ImagePreview>((resolve, reject) => {
+        this.getRequest(`https://${this._AprimoConfig.apiPrefix}.dam.aprimo.com/api/core/record/${id}/image/preview`)
+            .then((response: any) => {
+                resolve(response.body);
+            }).catch((err: unknown) => {
+                reject(err);
+            });
+    });
+}
+
+public async getRecordMasterFileId(id: string): Promise<string> {
+    if (this._AuthToken === null) {
+        await this.getAuthToken();
+    }
+
+    return new Promise<string>((resolve, reject) => {
+        this.getRequest<any>(`https://${this._AprimoConfig.apiPrefix}.dam.aprimo.com/api/core/record/${id}/masterfile`)
+            .then((response) => {
+                resolve(response.body.id);
+            }).catch((err: unknown) => {
+                reject(err);
+            });
+    });
+}
 
   /**
    * Returns a list of records
@@ -195,6 +401,63 @@ export class AprimoClient {
       }
     });
   }
+
+
+  public async getClassificationListValues(fieldDefinitions: FieldDefinition[]): Promise<FieldDefinition[]> {
+    if (this._AuthToken === null) {
+        await this.getAuthToken();
+    }
+    const promises: Promise<any>[] = [];
+    const updatedFieldDefinitions: FieldDefinition[] = [];
+
+    return new Promise<FieldDefinition[]>((resolve, reject) => {
+        try {
+            for (const fieldDefinition of fieldDefinitions) {
+                if (fieldDefinition.dataType === 'ClassificationList') {
+                    promises.push(this.getClassificationValues(fieldDefinition));
+                } else {
+                    updatedFieldDefinitions.push(fieldDefinition);
+                }
+            }
+            Promise.all(promises).then((fdArr: FieldDefinition[]) => {
+                updatedFieldDefinitions.push(...fdArr);
+                resolve(updatedFieldDefinitions);
+            });
+        } catch (error) {
+            reject(error);
+        }
+    });
+}
+
+public async getClassificationValues(fieldDefinition: FieldDefinition): Promise<FieldDefinition> {
+    if (this._AuthToken === null) {
+        await this.getAuthToken();
+    }
+
+    return new Promise<FieldDefinition>((resolve, reject) => {
+        try {
+          this.getRequest(`https://${this._AprimoConfig.apiPrefix}.dam.aprimo.com/api/core/classification/${fieldDefinition.rootId}/children`)
+                .then((response: any) => {
+                    const fieldValues: ClassificationItem[] = response.body.items;
+                    fieldDefinition.items = fieldValues.map((item) => {
+                        return {
+                            id: item.id,
+                            name: item.name,
+                            label: item.name,
+                            labels: item.labels,
+                        }
+                    });
+
+                    resolve(fieldDefinition);
+                })
+                .catch((err) => {
+                    resolve(fieldDefinition)
+                });
+        } catch (error) {
+            reject(error);
+        }
+    });
+}
 
   /**
    * Prepares the upload by making a request to the Aprimo API.

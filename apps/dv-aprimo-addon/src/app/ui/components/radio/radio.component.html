@@ -1,0 +1,17 @@
+<ul class="w-48 text-sm font-medium text-gray-900 rounded-lg pb-2">
+    <li class="w-full" *ngFor="let option of options; index as i">
+        <div class="flex items-center ps-3">
+            <input
+                attr.id="list-radio-{{ i }}"
+                type="radio"
+                value="{{ option.value }}"
+                name="list-radio"
+                class="w-4 h-4 text-blue-600"
+                (click)="optionSelected(option.value)"
+            />
+            <label for="list-radio-{{ i }}" class="w-full py-2 ms-2 text-sm font-normal text-gray-900"
+                >{{ option.label }}
+            </label>
+        </div>
+    </li>
+</ul>

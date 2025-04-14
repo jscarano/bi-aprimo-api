@@ -1,0 +1,187 @@
+<div class="m-12 w-1/2">
+    <div>
+        <app-title>Dropdown checkbox</app-title>
+        <app-dropdown-checkbox></app-dropdown-checkbox>
+    </div>
+    <div class="mt-4">
+        <app-title>Info message</app-title>
+        <app-info-message [message]="{messageMain: 'Main message', messageSuffix: 'Message Suffix'}"></app-info-message>
+    </div>
+    <div class="mt-4">
+        <app-title>Input</app-title>
+        <app-input label="A label for the input"></app-input>
+    </div>
+    <div class="mt-4">
+        <app-title>Textarea</app-title>
+        <app-text-area label="A label for the textarea"></app-text-area>
+    </div>
+    <div class="mt-4">
+        <app-title>Select</app-title>
+        <app-select label="A label for the select" [options]="[{label: 'Option 1', value: 'option1'}, {label: 'Option 2', value: 'option2'}, {label: 'Option 3', value: 'option3'}]"></app-select>
+    </div>
+    <div class="mt-4">
+        <app-title>Button</app-title>
+        <app-button label="Click me" [primary]="true" class="mr-4"></app-button>
+        <app-button label="Click me" [primary]="false"></app-button>
+    </div>
+    <div class="mt-4">
+        <app-title>Button Group</app-title>
+        <app-button-group [isSelected]="'1'" [buttonList]="[{label: 'Button 1', value: '1'}, {label: 'Button 2', value: '2'}, {label: 'Button 3', value: '3'}]"></app-button-group>
+    </div>
+    <div class="mt-4">
+        <app-title>Radio</app-title>
+        <app-radio label="A label for the radio" [options]="[{label: 'Option 1', value: 'option1'}, {label: 'Option 2', value: 'option2'}, {label: 'Option 3', value: 'option3'}]"></app-radio>
+    </div>
+    <div class="mt-4">
+        <app-title>Selected Component</app-title>
+        <app-selected-component [selectedComponent]="{componentType: 'topic', content: 'The content for a topic component, which will truncate on long text?'}"></app-selected-component>
+    </div>
+    <div class="mt-4">
+        <app-title>Skeleton</app-title>
+        <app-skeleton></app-skeleton>
+    </div>
+    <div class="mt-4">
+        <app-title>icons</app-title>
+        <table>
+            <tr>
+                <td>
+                    <app-composite-icon></app-composite-icon>
+                </td>
+                <td>
+                    Composite
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-equation-icon></app-equation-icon>
+                </td>
+                <td>
+                    Equation
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-figure-icon></app-figure-icon>
+                </td>
+                <td>
+                    Figure
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-h1-icon></app-h1-icon>
+                </td>
+                <td>
+                    H1
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-h2-icon></app-h2-icon>
+                </td>
+                <td>
+                    H2
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-h3-icon></app-h3-icon>
+                </td>
+                <td>
+                    H3
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-h4-icon></app-h4-icon>
+                </td>
+                <td>
+                    H4
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-h5-icon></app-h5-icon>
+                </td>
+                <td>
+                    H5
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-info-icon></app-info-icon>
+                </td>
+                <td>
+                    Info
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-lof-icon></app-lof-icon>
+                </td>
+                <td>
+                    List of Figures
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-lor-icon></app-lor-icon>
+                </td>
+                <td>
+                    List of References
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-lot-icon></app-lot-icon>
+                </td>
+                <td>
+                    List of Tables
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-settings-icon></app-settings-icon>
+                </td>
+                <td>
+                    Settings
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-table-icon></app-table-icon>
+                </td>
+                <td>
+                    Table
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-toc-icon></app-toc-icon>
+                </td>
+                <td>
+                    Table of Contents
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-topic-icon></app-topic-icon>
+                </td>
+                <td>
+                    Topic
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <app-unknown-icon></app-unknown-icon>
+                </td>
+                <td>
+                    Unknown
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<router-outlet>
+</router-outlet>

@@ -1,0 +1,24 @@
+<div class="header">
+    <div *ngIf="user$ | async as user">
+      Welcome, {{user.name}}
+    </div>
+    <div *ngIf="project$ | async as project">
+      Project: {{project.id}}
+      <span *ngIf="project.readonly">(Read Only)</span>
+    </div>
+  </div>
+
+  @if (selectionType$ | async; as selectionType) {
+    @if( selectionType === DocuveraSelectionType.Component) {
+        <div>Component ID: {{(componentSelection$ | async)?.componentId}}</div>
+        <div>Type: {{(componentSelection$ | async)?.componentType}}</div>
+        <div>Edit mode: {{(componentSelection$ | async)?.editMode}}</div>
+        <div>Editable: {{(componentSelection$ | async)?.editable}}</div>
+        <div>Content: {{(componentSelection$ | async)?.content}}</div>
+    } @else if (selectionType === DocuveraSelectionType.GeneratedContent) {
+        <div>Generated Content ID: {{(generatedContentSelection$ | async)?.id}}</div>
+        <div>Content type: {{(generatedContentSelection$ | async)?.contentType}}</div>
+    } @else if (selectionType === DocuveraSelectionType.Section) {
+        <div>Section ID: {{(sectionSelection$ | async)?.id}}</div>
+    }
+  }

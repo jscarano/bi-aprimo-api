@@ -1,0 +1,131 @@
+{
+  "name": "dv-aprimo-addon",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "dv-aprimo-addon",
+  "sourceRoot": "apps/dv-aprimo-addon/src",
+  "targets": {
+      "prebuild": {
+          "executor": "nx:run-commands",
+          "options": {
+              "command": "node scripts/update-config.js ${UPDATE_VERSION_FLAG}",
+              "cwd": "."
+          }
+      },
+      "build": {
+          "executor": "nx:run-commands",
+          "options": {
+              "commands": [
+                  {
+                      "command": "npx nx run dv-aprimo-addon:build-angular --outputPath={args.outputPath}",
+                      "forwardAllArgs": true
+                  }
+              ],
+              "cwd": "."
+          },
+          "configurations": {
+              "production": {}
+          }
+      },
+      "build-angular": {
+          "executor": "@angular-devkit/build-angular:application",
+          "outputs": [
+              "{options.outputPath}"
+          ],
+          "options": {
+              "index": "apps/dv-aprimo-addon/src/index.html",
+              "browser": "apps/dv-aprimo-addon/src/main.ts",
+              "polyfills": [
+                  "zone.js"
+              ],
+              "tsConfig": "apps/dv-aprimo-addon/tsconfig.app.json",
+              "inlineStyleLanguage": "css",
+              "assets": [
+                  "apps/dv-aprimo-addon/src/assets/favicon.ico",
+                  "apps/dv-aprimo-addon/src/assets"
+              ],
+              "styles": [
+                  "apps/dv-aprimo-addon/src/styles.css"
+              ]
+          },
+          "configurations": {
+              "production": {
+                  "budgets": [
+                      {
+                          "type": "initial",
+                          "maximumWarning": "750kb",
+                          "maximumError": "3mb"
+                      },
+                      {
+                          "type": "anyComponentStyle",
+                          "maximumWarning": "2kb",
+                          "maximumError": "4kb"
+                      }
+                  ],
+                  "outputHashing": "all",
+                  "assets": [
+                      "apps/dv-aprimo-addon/src/assets/favicon.ico",
+                      "apps/dv-aprimo-addon/src/assets",
+                      {
+                          "glob": "dv-manifest.json",
+                          "input": "apps/dv-aprimo-addon",
+                          "output": "/"
+                      }
+                  ],
+                  "outputPath": "dist/apps/dv-aprimo-addon"
+              },
+              "development": {
+                  "optimization": false,
+                  "extractLicenses": false,
+                  "sourceMap": true
+              }
+          },
+          "defaultConfiguration": "production"
+      },
+      "publish": {
+          "executor": "nx:run-commands",
+          "dependsOn": [
+              "build"
+          ],
+          "options": {
+              "command": "dv-addon-sdk publish {args.buildDir}",
+              "cwd": "apps/dv-aprimo-addon"
+          },
+          "configurations": {
+              "default": {
+                  "buildDir": "../../dist/apps/dv-aprimo-addon/browser"
+              }
+          }
+      },
+      "publish-multi-tenant": {
+          "executor": "nx:run-commands",
+          "options": {
+              "command": "node ../../scripts/publish-multi-tenant.js",
+              "cwd": "apps/dv-aprimo-addon"
+          }
+      },
+      "serve": {
+          "executor": "@angular-devkit/build-angular:dev-server",
+          "options": {
+              "buildTarget": "dv-aprimo-addon:build-angular",
+              "headers": {
+                  "Access-Control-Allow-Headers": "*"
+              }
+          },
+          "configurations": {
+              "production": {
+                  "buildTarget": "dv-aprimo-addon:build-angular:production"
+              }
+          }
+      },
+      "lint": {
+          "executor": "@nx/eslint:lint",
+          "options": {
+              "lintFilePatterns": [
+                  "apps/dv-aprimo-addon/src/**/*.ts",
+                  "apps/dv-aprimo-addon/src/**/*.html"
+              ]
+          }
+      }
+  }
+}

@@ -1,0 +1,40 @@
+<div class="inline-flex flex-row rounded-2xl bg-white" role="group">
+    <ng-container *ngFor="let button of buttonList; first as isFirst; last as isLast">
+        <button
+            type="button"
+            *ngIf="isFirst"
+            (click)="buttonSelected(button.value)"
+            [class]="
+                isSelected === button.value
+                    ? 'px-4 py-0.5 flex text-sm align-middle justify-center leading-normal items-center  font-normal text-center text-dv-text-color m-0.5 border border-white rounded-s-2xl bg-dv-btn-grp-selected'
+                    : 'px-4 py-0.5 flex text-sm align-middle justify-center leading-normal items-center  font-normal text-center text-dv-text-color bg-white m-0.5 border border-white rounded-s-2xl hover:bg-dv-btn-grp-hover'
+            "
+        >
+            {{ button.label }}
+        </button>
+        <button
+            type="button"
+            *ngIf="!isFirst && !isLast"
+            (click)="buttonSelected(button.value)"
+            [class]="
+                isSelected === button.value
+                    ? 'px-4 py-0.5 flex text-sm align-middle justify-center leading-normal items-center font-normal text-center text-dv-text-color border-t border-b border-white bg-dv-btn-grp-selected'
+                    : 'px-4 py-0.5 flex text-sm align-middle justify-center leading-normal items-center font-normal text-center text-dv-text-color bg-white border-t border-b border-white hover:bg-dv-btn-grp-hover'
+            "
+        >
+            {{ button.label }}
+        </button>
+        <button
+            type="button"
+            *ngIf="isLast"
+            (click)="buttonSelected(button.value)"
+            [class]="
+                isSelected === button.value
+                    ? 'px-4 py-0.5 flex text-sm align-middle justify-center leading-normal items-center font-normal text-center text-dv-text-color m-0.5 border border-white rounded-e-2xl bg-dv-btn-grp-selected'
+                    : 'px-4 py-0.5 flex text-sm align-middle justify-center leading-normal items-center font-normal text-center text-dv-text-color bg-white m-0.5 border border-white rounded-e-2xl hover:bg-dv-btn-grp-hover'
+            "
+        >
+            {{ button.label }}
+        </button>
+    </ng-container>
+</div>

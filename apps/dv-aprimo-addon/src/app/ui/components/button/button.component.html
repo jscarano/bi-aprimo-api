@@ -1,0 +1,10 @@
+<button type="button" (click)="sendClickEvent()"
+[ngClass]="{
+        'hover:bg-dv-primary-button-hover text-white bg-dv-primary-button': primary && !danger && !disabled, 
+        'bg-dv-secondary-button hover:bg-dv-secondary-button-hover border border-red-500 text-red-500': !primary && danger && !disabled,
+        'bg-dv-secondary-button hover:bg-dv-secondary-button-hover border border-dv-secondary-button-border text-dv-secondary-button-border': !primary && !danger && !disabled,
+        'bg-dv-disabled-button text-dv-disabled-button-text': disabled
+      }"
+        class="max-w-32 px-3 py-2 text-sm font-medium text-center rounded-sm "
+        [disabled]="disabled"
+        >{{label}}</button>

@@ -1,0 +1,17 @@
+<ng-container *ngIf="selectedComponent; else noComponentSelected">
+    <div
+        class="flex flex-row shadow-sm items-center max-w-sm pr-1 bg-dv-card-background border border-gray-200 rounded-sm hover:bg-white"
+    >
+        <!-- Icons -->
+        <ng-container *ngComponentOutlet="getIcon()" />
+        <span
+            class="text-ellipsis overflow-hidden whitespace-nowrap font-normal text-sm text-dv-text-color"
+            [innerHTML]="selectedComponent.content | truncate | sanitizeHtml"
+        >
+        </span>
+    </div>
+</ng-container>
+
+<ng-template #noComponentSelected>
+    <app-info-message [message]="noComponentSelectedMessage"></app-info-message>
+</ng-template>

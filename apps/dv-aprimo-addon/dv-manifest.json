@@ -1,0 +1,13 @@
+{
+  "name": "dv-example-addon",
+  "description": "An example Docuvera Addon",
+  "version": "0.0.2",
+  "entries": [
+    {
+      "location": "sidebar",
+      "displayName": "Aprimo Asset Search",
+      "route": "dv-aprimo-addon",
+      "iconPath": "assets/dv-primo-addon-icon.svg"
+    }
+  ]
+}
